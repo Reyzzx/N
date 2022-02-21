@@ -1,0 +1,1 @@
+worker: npm install && npm update && node . --mongodb+srv://Rum:Nt9qXhVJK1Np2J0s@reyz.85uvy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
