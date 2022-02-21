@@ -9,21 +9,21 @@ const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
 ╭──〔  ${namabot}  〕
-│⬡ Hai, %name!
+│Hai, %name!
 │
-│⬡ 💱limit tersisa *%limit Limit*
-│⬡ 🔱pangkat *%role*
-│⬡ 🏰Level *%level (%exp / %maxexp)* 
-│⬡   [%xp4levelup]
-│⬡   %totalexp XP secara Total
+│Limit tersisa : *%limit Limit*
+│Role : *%role*
+│Level : *%level (%exp / %maxexp)* 
+│[%xp4levelup]
+│%totalexp XP secara Total
 │ 
-│⬡ Hari : *%week %weton* 
-│⬡ Tanggal : *%date*
-│⬡ version : %version
+│Hari : *%week %weton* 
+│Tanggal : *%date*
+│Version : %version
 │
-│⬡ ⏰ Uptime:〔 %uptime 〕
-│⬡ 📁 Database: %rtotalreg dari %totalreg
-│⬡ 🕒 waktu: *%time*
+│Uptime:〔 %uptime 〕
+│Database: %rtotalreg dari %totalreg
+│Waktu: *%time*
 │
 ╰──────`.trimStart(),
   header: '╭──〔 %category 〕',
@@ -168,7 +168,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let names = m.fromMe ? conn.user : conn.contacts[who]
     let pushname = `${names.vnmae || names.notify || names.names || ('+' + names.jid.split`@`[0])}`
-    let pushn = 'menampilkan MENU fahrilbotz'
+    let pushn = 'Menampilkan MENU AkaishiBot'
     let name = registered ? global.db.data.users[m.sender].name : pushn
     let d = new Date(new Date + 3600000)
     let locale = 'id'
@@ -222,15 +222,15 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
 ╭───〔 ${namabot}  〕
-│⬡ Aktif selama ${uptime}
-│⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│⬡ Sc by ReyXD
+│ Aktif selama : ${uptime}
+│ Baterai : ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+│ *Sc by ReyXD*
 │
-│⬡ *${conn.blocklist.length}* Terblock
-│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+│ *${conn.blocklist.length}* Terblock
+│ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+│ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 │
-│⬡ note : jangan spam bot ^^
+│ *Note : Jangan Spam Bot*
 │
 ╰─────⬣
 
@@ -241,129 +241,129 @@ no caption‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎�
             {
               "rows": [
                 {
-                  "title": `🧾 allmenu`,
+                  "title": "ReyXD",
+                  "description": "Creator Akaishi",
+                  "rowId": ".? owner"
+                }, {
+                  "title": "allmenu",
                   "description": "Semua Fitur Bot",
                   "rowId": ".? all"
                 }, {
-                  "title": "🕋 Islam",
+                  "title": "Islam",
                   "description": "Menu Islam",
                   "rowId": ".? quran"
                 }, {
-                  "title": "🎓 Edukasi",
+                  "title": "Edukasi",
                   "description": "Menu Edukasi",
                   "rowId": ".? edukasi"
                 }, {
-                  "title": "📰 News",
+                  "title": "News",
                   "description": "Menu Berita",
                   "rowId": ".? News"
                 },  {
-                  "title": "🎮 Game",
+                  "title": "Game",
                   "description": "Menu Game",
                   "rowId": ".? game"
                 }, {
-                  "title": "☄ Epic Rpg",
+                  "title": "Epic Rpg",
                   "description": "Menu Game RPG",
                   "rowId": ".? rpg"
                 }, {
-                  "title": "📈 XP",
+                  "title": "XP",
                   "description": "XP Dan Level",
                   "rowId": ".? xp"
                 }, {
-                  "title": "🖼️ Random Image",
+                  "title": "Random Image",
                   "description": "Menu Foto Random",
                   "rowId": ".? image"
                 }, {
-                   "title": "💰sewabot",
-                   "description": "Untuk kamu yang ingin melihat daftar harga sewabot",
+                   "title": "Sewabot",
+                   "description": "Pricelist Bot",
                    "rowId": ".sewa"
                 }, {
-                  "title": "🎇 Stiker",
+                  "title": "Stiker",
                   "description": "Menu stiker",
                   "rowId": ".? stiker"
                 }, {
-                  "title": "🐚 Kerang Ajaib",
-                  "description": "Kerang ajaib....",
+                  "title": "Kerang Ajaib",
+                  "description": "Kerang Ajaib",
                   "rowId": ".? kerangajaib"
                 }, {
-                  "title": "📄 Quotes",
+                  "title": "Quotes",
                   "description": "Menu Quotes",
                   "rowId": ".? quotes"
                 }, {
-                  "title": "🏛️ Admin",
+                  "title": "Admin",
                   "description": "Menu Admin Group",
                   "rowId": ".? admin"
                 }, {
-                  "title": "🏢 Grup",
+                  "title": "Grup",
                   "description": "Menu Group",
                   "rowId": ".? grup"
                 }, {
-                  "title": "🔝 Premium",
-                  "description": "hanya Untuk Premium",
+                  "title": "Premium",
+                  "description": "Hanya Untuk User Premium",
                   "rowId": ".? premium"
                 }, {
-                  "title": "🖥️ Internet",
+                  "title": "Internet",
                   "description": "Cari Sesuatu",
                   "rowId": ".? internet"
                 }, {
-                  "title": "🥷 Anonymous",
+                  "title": "Anonymous",
                   "description": "Mainkan Anonymous Chat",
                   "rowId": ".? anonymous"
                 }, {
-                  "title": "✒️ Nulis & Logo",
+                  "title": "Nulis & Logo",
                   "description": "Nulis & Logo",
                   "rowId": ".? nulis"
                 }, {
-                  "title": "⬇️ Downloader",
+                  "title": "Downloader",
                   "description": "Download Sesuatu",
                   "rowId": ".? downloader"
                 }, {
-                  "title": "🔧 Tools",
+                  "title": "Tools",
                   "description": "Tools Yang Bisa di Gunakan Di Bot",
                   "rowId": ".? tools"
                 }, {
-                  "title": "😂 fun",
+                  "title": "Fun",
                   "description": "Menu bahagia",
                   "rowId": ".? fun"
                 }, {
-                   "title": "💲donasi",
+                   "title": "Donasi",
                    "description": "jangan lupa donasi",
                    "rowId": ".donasi" 
                 }, {
-                  "title": "📂 Database",
+                  "title": "Database",
                   "description": "Simpan Sesuatu",
                   "rowId": ".? database"
                 }, {
-                  "title": "📝 Vote & Absen",
+                  "title": "Vote & Absen",
                   "description": "Menu Vote & Absen",
                   "rowId": ".? vote"
                 }, {
-                  "title": "🎙️ Pengubah Suara",
+                  "title": "Pengubah Suara",
                   "description": "Ubah Suaramu",
                   "rowId": ".? audio"
                 }, {
-                  "title": "‼️rules bot",
-                  "description": "rules bot! melanggar akan di ban ",
+                  "title": "Rules bot",
+                  "description": "Rules Bot! Jika Melanggar Akan Di Ban!",
                   "rowId": ".rules"
                 }, {
-                  "title": "🤖 Jadi Bot",
-                  "description": "numpang",
+                  "title": "Jadi Bot",
+                  "description": "Numpang",
                   "rowId": ".? jadibot"
                 }, {
-                  "title": "👩‍💼 Anime",
-                  "description": "Cari Anime random",
+                  "title": "Anime",
+                  "description": "Cari Anime Random",
                   "rowId": ".? anime"
                 }, {
-                  "title": "🛐 Infobot",
-                  "description": "Info tentang bot",
+                  "title": "Infobot",
+                  "description": "Info Tentang Bot",
                   "rowId": ".? info"
                 }, {
                   "title": "Tanpa Kategori",
-                  "description": "tanpa kategori",
+                  "description": "Tanpa Kategori",
                   "rowId": ".? tanpakategori"
-                }, {
-                  "title": "👑 owner",
-                  "description": "menu Khusu Owner",
-                  "rowId": ".? owner"
                 }
               ]
             }
