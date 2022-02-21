@@ -8,6 +8,7 @@ handler.command = /^(kick|rk|k|\-)$/i
 
 handler.group = true
 handler.botAdmin = true
+handler.admin = true
 
 module.exports = handler
 
