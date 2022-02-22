@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) =>
 conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
-                        "title": "Daftar Gacha yang ada pada fahrilbotz",
+                        "title": "Daftar Gacha yang ada pada AkaishiBot",
                         "description": `Pencet tombol "LIST-GACHA" untuk menampilkan daftar gacha`,
 						"footerText": "Harap menggunakan command ini dengan bijak!",
                         "buttonText": "LIST-GACHA",
@@ -60,7 +60,7 @@ conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik fahrilbotz",
+                                    "description": "Owner AkaishiBot",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
