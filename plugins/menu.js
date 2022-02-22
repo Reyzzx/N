@@ -462,7 +462,7 @@ handler.help = ['menu', 'help']
 handler.tags = ['main']
 handler.command = /^(\?|menu|help)$/i
 
-handler.register = false //kallo mau pas cmd /menu register/ harus ketik /daftar true in 
+handler.register = true 
 
 module.exports = handler
 
