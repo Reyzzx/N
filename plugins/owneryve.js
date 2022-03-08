@@ -1,8 +1,8 @@
 let handler = function (m) {
-	this.sendContact(m.chat, '6285876902820', 'creator sc ini :)', m)
+	this.sendContact(m.chat, '14849899888', 'creator sc ini :)', m)
 }
 
-handler.customPrefix = ['creator fahrilbotz']  //jangan di ganti ntar eror
+handler.customPrefix = ['creator Ix']  //jangan di ganti ntar eror
 handler.command = new RegExp
 handler.tags = ['info']
 
