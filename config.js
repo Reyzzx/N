@@ -6,11 +6,11 @@
 gc1 = ''
 gc2 = ''
 gc3 = ''
-global.linkGC = ['https://chat.whatsapp.com/H2YpbQsOdwn8GLDmuZzRW2', ''] // ganti jadi group lu
-global.owner = ['6285158338027','6285158338027'] // Put your number here //owner eval
-global.kontak = ['6285158338027','6285158338027'] //Ketika ada yang ngetik #owner
-global.mods = ['6285158338027'] // Want some help?
-global.prems = ['6285158338027','6282189629635'] // Premium user has unlimited limit
+global.linkGC = ['https://chat.whatsapp.com/LE1MU5qRgD22hyh6HNuRAL', ''] // ganti jadi group lu
+global.owner = ['14849899888','447700170047'] // Put your number here //owner eval
+global.kontak = ['14849899888','447700170047'] //Ketika ada yang ngetik #owner
+global.mods = ['14849899888'] // Want some help?
+global.prems = ['14849899888','6282189629635'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com', 
@@ -46,13 +46,13 @@ namakontak2 = '-'
 caption = 'Nih Kak'
 
 // Sticker WM
-global.packname = 'AkaishiMD' // ganti aja
+global.packname = 'Ix' // ganti aja
 global.author = 'by ReyXD' // ganti aja
 
 
-bc = 'AkaishiMD' //fahril Broadcast
+bc = 'Ix' //fahril Broadcast
 footer = '\n©ReyXD'
-namabot = 'AkaishiMD'
+namabot = 'Ix'
 namalu = 'ReyXD'
 
 
